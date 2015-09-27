@@ -1,0 +1,169 @@
+---
+layout: default
+---
+<div class="jumbotron hidden-xs hidden-sm">
+  <h1>Olin Alumni Merit Scholarship Fund</h1>
+  <p><a href="/donate" class="btn btn-lg btn-primary">Donate Today</a></p>
+</div>
+
+<div class="row marketing">
+  <h4 id="goal">The Goal</h4>
+  <p>To create a fund which reinstates the Full Merit Scholarship for all Olin students.</p>
+
+  <h4 id="why">Why</h4>
+  <p>By reducing the cost of Olin, we make Olin’s world class education available to the widest variety of students possible. Graduating debt free enables alumni to pursue their passions and concentrate on career and life advancement without the worries of debt.</p>
+
+  <h4 id="how">How</h4>
+  <p>We've signed a <a href="/agreement">Memorandum of Understanding</a> with Olin, which spells out the details. Here are the basics:</p>
+  <ul>
+    <li>We must create an endowment of <strong>$125,000</strong> by <strong>June 30, 2018</strong>.</li>
+    <li>Once endowed, the fund will distribute a scholarship from the endowment’s earnings (in accordance with the college's policies) such that each student in their eighth semester would receive an equal scholarship. These distributions will start small, with a minimum of $75 distributed per student. </li>
+    <li>In future years, once the distribution exceeds the cost of the eighth semester's tuition, the Fund would then start distributing money to the preceding semesters (seventh semester, followed by sixth, etc.) until the entire four year tuition of each student is covered.</li>
+    <li>If any distribution would fall below <strong>$75</strong> in a year, no distribution would be made.</li>
+    <li>If we fail to raise $125,000 by June 30, 2018, all collected funds will be marked unrestricted and the fund will dissolve.</li>
+  </ul>
+
+  <h4 id="progress">Progress</h4>
+  <p>We'll periodically update our progress towards the $125,000 goal below.</p>
+  <ul>
+    <li><em>March 26, 2015 (initial announcement)</em> - <strong>$846.82</strong>
+    <li><em>May 5, 2015</em> - <strong>$9,900</strong>
+    <li><em>May 20, 2015</em> - <strong>$11,036</strong>
+    <li><em>May 29, 2015</em> - <strong>$19,124</strong>
+    <li><em>May 30, 2015</em> - <strong>$21,500</strong>
+    <li><em>June 3, 2015</em> - <strong>$37,351</strong>
+    <li><em>June 12, 2015</em> - <strong>$44,431</strong>
+    <li><em>June 24, 2015</em> - <strong>$65,706</strong>
+    <li><em>June 30, 2015</em> - <strong>$81,811</strong>
+    <li><em>July 30, 2015</em> - <strong>$91,540</strong>
+  </ul>
+
+  <h4 id="financial-model">Financial Model</h4>
+
+  <p>What Olin endeavor would be complete without a model. <a href="#" data-toggle="modal" data-target="#myModal">Change our assumptions</a>, if you like.
+  </p>
+
+  <table id="model" class="table table-hover">
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th class="hidden-xs hidden-sm">Total Students</th>
+        <th class="hidden-xs hidden-sm">Total Alumni</th>
+        <th>Endowment</th>
+        <th class="hidden-xs hidden-sm">Earnings</th>
+        <th>Distribution</th>
+      </tr>
+    </thead>
+    <tbody>
+    </tbody>
+  </table>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label for="studentsPerClass" class="col-sm-4 control-label">Students Per Class</label>
+            <div class="col-sm-2">
+              <input type="number" class="form-control" id="studentsPerClass" value="80">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="endowmentIncome" class="col-sm-4 control-label">Endowment Income </label>
+            <div class="col-sm-3">
+              <div class="input-group">
+                <input type="number" class="form-control" id="endowmentIncome" value="5">
+                <div class="input-group-addon">%</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="futureYears" class="col-sm-4 control-label">Future Years</label>
+            <div class="col-sm-2">
+              <input type="number" class="form-control" id="futureYears" value="10">
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="participation" class="col-sm-4 control-label">Participation</label>
+            <div class="col-sm-4">
+              <div class="input-group">
+                <input type="number" class="form-control" id="participation" value="80">
+                <div class="input-group-addon">%</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="giftTillFive" class="col-sm-4 control-label">Average gift 0-5 years</label>
+            <div class="col-sm-4">
+              <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="number" class="form-control" id="giftTillFive" value="50">
+                <div class="input-group-addon">.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="giftFiveTillTen" class="col-sm-4 control-label">Average gift 5-10 years</label>
+            <div class="col-sm-4">
+              <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="number" class="form-control" id="giftFiveTillTen" value="150">
+                <div class="input-group-addon">.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="giftTenTillFifteen" class="col-sm-4 control-label">Average gift 10-15 years</label>
+            <div class="col-sm-4">
+              <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="number" class="form-control" id="giftTenTillFifteen" value="300">
+                <div class="input-group-addon">.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="giftFifteenTillTwenty" class="col-sm-4 control-label">Average gift 15-20 years</label>
+            <div class="col-sm-4">
+              <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="number" class="form-control" id="giftFifteenTillTwenty" value="500">
+                <div class="input-group-addon">.00</div>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="giftTwentyPlus" class="col-sm-4 control-label">Average gift 20+ years</label>
+            <div class="col-sm-4">
+              <div class="input-group">
+                <div class="input-group-addon">$</div>
+                <input type="number" class="form-control" id="giftTwentyPlus" value="700">
+                <div class="input-group-addon">.00</div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" id="recalculate" data-dismiss="modal">Recalculate</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <h4 id="questions">Questions</h4>
+  <p><strong>How is this different than the current Financial Aid, Student Scholarships, or Parent Scholarships designations?</strong></p>
+
+  <p>The Olin Alumni Merit Scholarship Fund is fundamentally different than those three designations because it is incremental to Olin’s operating budget. This means that this fund provides an additional merit scholarship of $75 (to start) and helps reduce cost for those only receiving merit scholarships. For those receiving need based aid it reduces the need-based aid they receive and increases the merit scholarship total value.</p>
+</div>
+
+<footer class="footer">
+  <p>Last updated: {{ site.time | | date: '%B %d, %Y' }} </p>
+</footer>
