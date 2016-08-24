@@ -8,7 +8,7 @@
 outputRow = (row) ->
   output = "<tr>"
   for col, i in row
-    col = numeral(col).format('$0,0.00') if i >= 3
+    col = numeral(col).format('$0,0.00') if i >= 3 && i != 6
 
     if i in [1,2,4]
       klass = "hidden-sm hidden-xs"
@@ -45,16 +45,16 @@ calculateGift = (totalAlumni, year) ->
 
 calculate = ->
   table = [
-    [2015, 320, 594, 81811, 0, 0]
+    [2015, 320, 594, 81811, 0, 0, 0],
+    [2016, 320, 674, 195137, 0, 75, 73]
   ]
-  startYear = 2016
-  alumniInitialCount = 514
+  startYear = 2017
 
   studentsPerClass = parseInt($("#studentsPerClass").val())
   futureYears = parseInt($("#futureYears").val())
   endowmentRate = parseInt($("#endowmentIncome").val()) / 100.0
 
-  previous = table[0]
+  previous = table[1]
   for year in [startYear..(startYear+futureYears)]
     previousTotalAlumni = previous[2]
     pastEndowment = previous[3]
@@ -70,7 +70,7 @@ calculate = ->
       currentIncome = 0
     distribution = currentIncome / studentsPerClass
 
-    current = [year, totalStudents, totalAlumni, currentEndowment, currentIncome, distribution]
+    current = [year, totalStudents, totalAlumni, currentEndowment, currentIncome, distribution, studentsPerClass]
     previous = current
     table.push current
 
