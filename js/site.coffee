@@ -47,14 +47,16 @@ calculate = ->
   table = [
     [2015, 320, 594, 81811, 0, 0, 0],
     [2016, 320, 674, 195137, 0, 75, 64]
+    [2017, 320, 754, 263420, 25327, 75, 68]
   ]
-  startYear = 2017
+  # Remember to update both of these values when adding a new row above.
+  startYear = 2018
+  previous = table[2] # Increment this value when there's a new row
 
   studentsPerClass = parseInt($("#studentsPerClass").val())
   futureYears = parseInt($("#futureYears").val())
   endowmentRate = parseInt($("#endowmentIncome").val()) / 100.0
 
-  previous = table[1]
   for year in [startYear..(startYear+futureYears)]
     previousTotalAlumni = previous[2]
     pastEndowment = previous[3]
