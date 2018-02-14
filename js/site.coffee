@@ -6,8 +6,13 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 outputRow = (row) ->
-  output = "<tr>"
+  if row[7]
+    output = '<tr class="info">'
+  else
+    output = "<tr>"
   for col, i in row
+    break if i == 7 # Skip the last column
+
     col = numeral(col).format('$0,0.00') if i >= 3 && i != 6
 
     if i in [1,2,4]
@@ -45,9 +50,9 @@ calculateGift = (totalAlumni, year) ->
 
 calculate = ->
   table = [
-    [2015, 320, 594, 81811, 0, 0, 0],
-    [2016, 320, 674, 195137, 0, 75, 64]
-    [2017, 320, 754, 263420, 25327, 75, 68]
+    [2015, 320, 594, 81811, 0, 0, 0, true],
+    [2016, 320, 674, 195137, 0, 75, 64, true]
+    [2017, 320, 754, 263420, 25327, 75, 68, true]
   ]
   # Remember to update both of these values when adding a new row above.
   startYear = 2018
@@ -72,7 +77,7 @@ calculate = ->
       currentIncome = 0
     distribution = currentIncome / studentsPerClass
 
-    current = [year, totalStudents, totalAlumni, currentEndowment, currentIncome, distribution, studentsPerClass]
+    current = [year, totalStudents, totalAlumni, currentEndowment, currentIncome, distribution, studentsPerClass, false]
     previous = current
     table.push current
 
