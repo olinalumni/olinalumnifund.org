@@ -53,10 +53,13 @@ calculate = ->
     [2015, 320, 594, 81811, 0, 0, 0, true],
     [2016, 320, 674, 195137, 0, 75, 64, true]
     [2017, 320, 754, 263420, 25327, 75, 68, true]
+    [2022, 320, 1154, 815533, 251997, 250, 53, true]
+    [2023, 320, 1234, 884434, 284088, 250, 76, true]
+    [2024, 320, 1314, 937251, 380954, 300, 91, true]
   ]
   # Remember to update both of these values when adding a new row above.
-  startYear = 2018
-  previous = table[2] # Increment this value when there's a new row
+  startYear = 2025
+  previous = table[5] # Increment this value when there's a new row
 
   studentsPerClass = parseInt($("#studentsPerClass").val())
   futureYears = parseInt($("#futureYears").val())
