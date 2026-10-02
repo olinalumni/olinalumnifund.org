@@ -1,2 +1,4 @@
 source 'https://rubygems.org'
-gem 'github-pages'
+gem 'jekyll', '~> 3.10'
+gem 'jekyll-coffeescript', '~> 1.1'
+gem 'jekyll-github-metadata', '~> 2.13'
